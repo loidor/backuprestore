@@ -11,3 +11,11 @@ chmod +x /usr/local/bin/restore
 chmod +x /usr/local/bin/backup
 echo "session-cleanup-script = /usr/local/bin/restore" >> /etc/lightdm/lightdm.conf
 
+backup
+
+echo "Allt klart!"
+echo
+echo "Kör 'sudo backup' för att göra en ny återställningspunkt."
+echo
+
+exit 0
