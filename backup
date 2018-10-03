@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [[ $EUID -ne 0 ]]; then
+  echo "Det här måste köras som root"
+  exit 1
+fi
+
+rm -rf /opt/public
+cp -a /home/public /opt/public
+echo "Backup klar."
